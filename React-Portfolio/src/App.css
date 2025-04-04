@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5rem;
+  text-align: left;
+  gap: 1rem; /* spacing between elements */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero p,
+.hero h1,h2 {
+  margin: 0; /* remove default spacing */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align items to the start */
+  width: 100%; /* Ensure it takes up full width */
+  gap: 20px; /* Space between the text and the image */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.text {
+  flex: 1; /* Allow text div to take up available space */
+  max-width: 80%; /* Limit the width of the text area */
 }
 
-.card {
-  padding: 2em;
+.image-container {
+  margin-right: auto; /* This aligns the image to the right */
+  border: solid;
 }
 
-.read-the-docs {
-  color: #888;
+.image {
+  max-width: 60%; /* Limit the image's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 10px 10px #d3ae6b; /* Initial box-shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animate box-shadow smoothly */
+}
+
+.image:hover {
+  box-shadow: 15px 15px #d3ae6b;
+  transform: translateX(-5px);
+}
+
+.left {
+  width: 80rem;
 }

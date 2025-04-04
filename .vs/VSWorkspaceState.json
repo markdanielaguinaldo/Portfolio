@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\React-Portfolio",
-    "\\React-Portfolio\\src"
+    "\\React-Portfolio\\src",
+    "\\React-Portfolio\\src\\assets",
+    "\\React-Portfolio\\src\\components",
+    "\\React-Portfolio\\src\\style"
   ],
-  "SelectedNode": "\\React-Portfolio\\src\\App.tsx",
+  "SelectedNode": "\\React-Portfolio\\index.html",
   "PreviewInSolutionExplorer": false
 }
